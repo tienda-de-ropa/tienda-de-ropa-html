@@ -10,6 +10,12 @@ header .logo a {
 
 }
 
+#link{
+    position: relative;
+    display: flex;
+    left: 5%;
+}
+
 header nav a {
     text-transform: uppercase;
     font-size: 14px;

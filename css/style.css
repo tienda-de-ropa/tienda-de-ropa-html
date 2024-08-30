@@ -10,7 +10,7 @@ header .logo a {
 
 }
 
-#link{
+#link {
     position: relative;
     display: flex;
     left: 5%;
@@ -20,11 +20,11 @@ header nav a {
     text-transform: uppercase;
     font-size: 14px;
     text-decoration: none;
-    
+
 }
 
 .hero {
-    background-color: #333;
+    background-color: #171717;
     color: #fff;
     text-align: center;
     padding: 100px 20px;
@@ -41,20 +41,19 @@ h1 {
     margin-bottom: 30px;
 }
 
-.hero button {
-    background-color: #f0c040;
+.hero a {
+    background-color: #f0c140;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    color: #000;
+    color: #000000;
     text-transform: uppercase;
 }
 
 h2 {
     margin: 20px;
-    text-transform:uppercase;
-
+    text-transform: uppercase;
 }
 
 
@@ -62,16 +61,12 @@ footer p {
     margin: 0;
 }
 
-.row p{
-    background-color: #00000028;
+.row p {
+    background-color: #00000000;
     border-radius: 20px;
     padding: 1px;
     display: flex;
     justify-content: center;
-}
-
-btn{
-    background-color: #f0c040;
 }
 
 /*shopping*/
@@ -83,9 +78,9 @@ btn{
     color: white;
 }
 
-.centrado{
+.centrado {
     position: absolute;
-    top:0px;
+    top: 0px;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.5);
@@ -93,7 +88,7 @@ btn{
     border-radius: 5px;
 }
 
-.card{
+.card {
     background-color: #000000a9;
 }
 
@@ -143,4 +138,17 @@ btn{
 
 body {
     overflow-x: hidden;
+}
+
+/*Ofertas*/
+
+.descuento-tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #28a745;
+    color: white;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    border-radius: 5px;
 }

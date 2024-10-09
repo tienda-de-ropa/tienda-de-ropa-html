@@ -93,7 +93,6 @@ footer p {
 }
 
 /*barra lateral*/
-
 .lateral {
     width: 250px;
     background-color: #000000;
@@ -101,7 +100,42 @@ footer p {
     padding: 15px;
     height: 100vh;
     position: relative;
+    transition: transform 0.3s ease;
 }
+
+/* Barra lateral oculta en pantallas pequeñas por defecto */
+@media (max-width: 768px) {
+    .lateral {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 250px;
+        height: 100vh;
+        transform: translateX(-100%);
+    }
+
+    .lateral.show {
+        transform: translateX(0);
+    }
+
+    #sidebar {
+        position: fixed;
+        z-index: 1000;
+    }
+
+    #toggleSidebar {
+        display: inline-block;
+    }
+}
+
+#toggleSidebar {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
 
 .lateral header {
     font-size: 1.5rem;

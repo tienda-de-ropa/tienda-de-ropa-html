@@ -20,12 +20,13 @@
                 <a href="../pages/login.html" class="text-white mx-3">Inicio sesion</a>
                 <a href="../pages/registro.html" class="text-white">Registro</a>
             </div>
+            <button id="toggleSidebar" class="text-white d-md-none">☰</button>
         </nav>
     </header>
 
     <!-- Barra latearl -->
     <div class="row">
-        <div class="lateral">
+        <div id="sidebar" class="lateral">
             <header>Productos</header>
             <ul>
                 <li><a href="poleron-hombre.html">Polerones</a></li>
@@ -33,6 +34,7 @@
                 <li><a href="calzado-hombre.html">Calzado</a></li>
                 <li><a href="accesorios-hombre.html">Accesorios</a></li>
             </ul>
+            
         </div>
 
         <!-- Contenido Productos -->
@@ -91,6 +93,14 @@
     <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2024 fashion-cat. Todos los derechos reservados.</p>
     </footer>
+    <script>
+        const sidebar = document.getElementById('sidebar');
+        const toggleButton = document.getElementById('toggleSidebar');
+
+        toggleButton.addEventListener('click', () => {
+            sidebar.classList.toggle('show');
+        });
+    </script>
 </body>
 
 </html>

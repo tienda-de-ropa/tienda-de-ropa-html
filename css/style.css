@@ -109,7 +109,7 @@ footer p {
         position: absolute;
         top: 0;
         left: 0;
-        width: 250px;
+        width: 200px;
         height: 100vh;
         transform: translateX(-100%);
     }
@@ -130,12 +130,9 @@ footer p {
 
 #toggleSidebar {
     font-size: 1.5rem;
-    background: none;
     border: none;
     cursor: pointer;
     padding: 5px 10px;
-    position: relative;
-    left: 10px;
 }
 
 
